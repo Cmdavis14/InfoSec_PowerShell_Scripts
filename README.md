@@ -7,7 +7,7 @@ This repository contains PowerShell scripts designed for information security pr
 
 ## Scripts  
 
-### 1. Log Analysis and Monitoring  
+### 1. FailedLogons.ps1 
 
 **Description:**  
 The `Log Analysis and Monitoring` script analyzes Windows Event Logs for anomalies or specific event IDs. Currently, it focuses on detecting login failures by extracting `Event ID 4625` from the Security log. This script helps identify unauthorized access attempts and can serve as a foundation for further log analysis or integration into SIEM solutions.
@@ -19,7 +19,7 @@ The `Log Analysis and Monitoring` script analyzes Windows Event Logs for anomali
 **Source Code:**
 Source code is located [here](Log_Analysis_&_Monitoring).
 
-### 2. Suspicious Process Monitoring
+### 2. Suspicious_Processes.ps1
 
 **Description:**  
 The Suspicious Process Monitoring script is designed to monitor active TCP connections on a Windows system. It continuously checks the system for suspicious incoming or outgoing connections, flags potential threats based on a predefined list of suspicious IPs, and provides detailed real-time monitoring and alerts.
