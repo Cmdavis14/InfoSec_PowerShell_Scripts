@@ -18,3 +18,24 @@ The `Log Analysis and Monitoring` script analyzes Windows Event Logs for anomali
 
 **Source Code:**
 Source code is located [here](Log_Analysis_&_Monitoring).
+
+### 2. Suspicious Process Monitoring
+
+**Description:**  
+The Suspicious Process Monitoring script is designed to monitor active TCP connections on a Windows system. It continuously checks the system for suspicious incoming or outgoing connections, flags potential threats based on a predefined list of suspicious IPs, and provides detailed real-time monitoring and alerts.
+This script fetches process details associated with each network connection, logs the information to a CSV file, and provides geolocation data for remote IPs. If a suspicious connection is detected, the script generates real-time alerts, displays a message box, and can be configured to send email
+
+**Functionality:**  
+- Connection Monitoring:Monitors all active TCP connections on the system, uses Get-NeTCPConnection cmdlet to fetch info about IPs, ports, and the process associated with the connection.
+- Suspicious IP Detection: compares the remote IP address of each connection against a deny list, if in deny list, its flagged as suspicious.
+- Geolocation Lookup: For each suspicious connection, the script preforms a geo-lookup to provide the city and country of the remote address using ipinfo.io API.
+- Logging: logs details to a CSV file (DetailedConnectionLog.csv)
+- Real-Time Alerts: If suspicious connection is detected, the script will: output red alert to console, and display pop-up alert. 
+- Real-Time Monitoring: The script runs in a loop and updates every 10 seconds to provide continuous monitoring of the network connections. 
+**Use Cases:**
+- Real-Time Threat Detection
+- Network Security Monitoring
+- Geolocaiton-Based Alerting
+
+**Source Code:**
+Source code is located [here](Suspicious_Process_Monitoring).
