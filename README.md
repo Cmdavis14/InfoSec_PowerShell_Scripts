@@ -10,19 +10,19 @@ This repository contains PowerShell scripts designed for information security pr
 ### 1. FailedLogons.ps1 
 
 **Description:**  
-The `Log Analysis and Monitoring` script analyzes Windows Event Logs for anomalies or specific event IDs. Currently, it focuses on detecting login failures by extracting `Event ID 4625` from the Security log. This script helps identify unauthorized access attempts and can serve as a foundation for further log analysis or integration into SIEM solutions.
+The `Failed Logons` script analyzes Windows Event Logs for anomalies or specific event IDs. Currently, it focuses on detecting login failures by extracting `Event ID 4625` from the Security log. This script helps identify unauthorized access attempts and can serve as a foundation for further log analysis or integration into SIEM solutions.
 
 **Functionality:**  
 - Retrieves login failure events from the Security log.  
 - Exports the extracted data, including time of occurrence and details, into a `.csv` file in scripts directory for further analysis.
 
 **Source Code:**
-Source code is located [here](Log_Analysis_&_Monitoring).
+Source code is located [here](Log_Analysis/FailedLogons.ps1).
 
 ### 2. Suspicious_Processes.ps1
 
 **Description:**  
-The Suspicious Process Monitoring script is designed to monitor active TCP connections on a Windows system. It continuously checks the system for suspicious incoming or outgoing connections, flags potential threats based on a predefined list of suspicious IPs, and provides detailed real-time monitoring and alerts.
+The Suspicious Process script is designed to monitor active TCP connections on a Windows system. It continuously checks the system for suspicious incoming or outgoing connections, flags potential threats based on a predefined list of suspicious IPs, and provides detailed real-time monitoring and alerts.
 This script fetches process details associated with each network connection, logs the information to a CSV file, and provides geolocation data for remote IPs. If a suspicious connection is detected, the script generates real-time alerts, displays a message box, and can be configured to send email
 
 **Functionality:**  
@@ -38,4 +38,4 @@ This script fetches process details associated with each network connection, log
 - Geolocaiton-Based Alerting
 
 **Source Code:**
-Source code is located [here](Suspicious_Process_Monitoring).
+Source code is located [here](Monitoring/Suspicious_Processes.ps1).
