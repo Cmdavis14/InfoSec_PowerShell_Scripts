@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaselineHashes>
+  <File>
+    <Path>C:\Windows\System32\cmd.exe</Path>
+    <Hash>9F6D7863D25F3E6C9E5876AC22B7E9E20C812D9EAEEDC148D52F7E71B5F4B4D5</Hash>
+  </File>
+  <File>
+    <Path>C:\Program Files\App1\app1.exe</Path>
+    <Hash>2E99B5B0C9ED1A3DF48A11A65D32C8F7D4E5375BEAC51C3F4A9FE6E9AB7E1C7A</Hash>
+  </File>
+  <File>
+    <Path>C:\Scripts\Utilities\utility.ps1</Path>
+    <Hash>1A6DF4D93F8AB57C3A7E1C85B9E9E5F17C45A3B812D5271FE6FAF86B9E4D7C2A</Hash>
+  </File>
+  <File>
+    <Path>C:\Logs\server.log</Path>
+    <Hash>7A82B3F9C0E5A9E7F3A6E1C7D4F527E1D9B5A9F7C8E31B5F9C8E6A7D2F5B7C9A</Hash>
+  </File>
+</BaselineHashes>
